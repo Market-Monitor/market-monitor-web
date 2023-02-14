@@ -12,7 +12,7 @@ const HeaderRight = () => {
     <div className="flex items-center">
       <div className="w-48">
         <Listbox value={market} onChange={changeMarket}>
-          <div className="relative mr-2">
+          <div className="relative">
             <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
               <span className="block truncate">{market.name}</span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -88,7 +88,7 @@ const HeaderRight = () => {
         </Listbox>
       </div>
 
-      <div className="flex items-center justify-start relative">
+      <div className="flex items-center justify-start relative mx-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -111,6 +111,26 @@ const HeaderRight = () => {
           className="pl-10 pr-4 py-2 rounded-xl border text-sm w-72"
           placeholder="Search for a vegetable / fruit"
         />
+      </div>
+
+      <div className="flex items-center">
+        <button className="p-2 bg-gray-400 hover:bg-gray-500 text-white duration-300 rounded-xl inline-flex items-center text-sm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+          <span className="ml-2">Account</span>
+        </button>
       </div>
     </div>
   );

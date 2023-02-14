@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { Sofia_Sans } from "@next/font/google";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const sofia_sans = Sofia_Sans({
@@ -20,10 +21,16 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className="">
         <Header />
 
+        <hr className="" />
+
         {children}
+
+        <hr className="my-4" />
+
+        <Footer />
       </body>
     </html>
   );
