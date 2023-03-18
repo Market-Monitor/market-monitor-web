@@ -60,7 +60,6 @@ const Footer = () => {
           </div>
         </div>
 
-
         <p className="mt-4 text-gray-600">
           &copy; {new Date().getFullYear()} MarketMonitor. All Rights Reserved
         </p>

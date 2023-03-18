@@ -1,5 +1,3 @@
-"use client";
-
 import useMarketSelector from "@/stores/useMarket";
 
 const Welcome = () => {
